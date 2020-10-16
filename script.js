@@ -65,3 +65,25 @@ $("#search").on("click", function (event) {
   event.preventDefault();
   searchCountry();
 });
+
+$("#random").on("click", function (event) {
+  event.preventDefault();
+
+  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  let numbers = "0123456789";
+
+  for (var i = 0; i < 1; i++) {
+    alphabet = alphabet.Math.floor(Math.random() * alphabet.length);
+  }
+
+  for (var i = 0; i < 1; i++) {
+    numbers = numbers.Math.floor(Math.random() * numbers.length);
+  }
+
+  let randomValue = alphabet + numbers;
+
+  console.log(randomValue);
+
+  //$("#textInput").val(randomValue);
+  //searchCountry();
+});
