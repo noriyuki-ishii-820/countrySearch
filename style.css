@@ -7,3 +7,11 @@
   width: 85%;
   margin: auto;
 }
+
+#countryName {
+  font-size: 40px;
+}
+
+#map {
+  height: 300px;
+}
