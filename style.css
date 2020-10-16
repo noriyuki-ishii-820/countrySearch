@@ -1,0 +1,9 @@
+.input {
+  width: 70%;
+}
+
+.border {
+  border-bottom: 2px black dotted;
+  width: 85%;
+  margin: auto;
+}

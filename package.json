@@ -1,0 +1,22 @@
+{
+  "name": "countrysearch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noriyuki-ishii-820/countrySearch.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/noriyuki-ishii-820/countrySearch/issues"
+  },
+  "homepage": "https://github.com/noriyuki-ishii-820/countrySearch#readme",
+  "dependencies": {
+    "bulma": "^0.9.1"
+  }
+}
