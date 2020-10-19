@@ -70,20 +70,13 @@ $("#random").on("click", function (event) {
   event.preventDefault();
 
   let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  let numbers = "0123456789";
-
   for (var i = 0; i < 1; i++) {
-    alphabet = alphabet.Math.floor(Math.random() * alphabet.length);
+    alphabet = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
   }
 
-  for (var i = 0; i < 1; i++) {
-    numbers = numbers.Math.floor(Math.random() * numbers.length);
-  }
+  $("#userInput").val(alphabet);
 
-  let randomValue = alphabet + numbers;
+  searchCountry();
 
-  console.log(randomValue);
-
-  //$("#textInput").val(randomValue);
-  //searchCountry();
+  $("#userInput").val("");
 });
