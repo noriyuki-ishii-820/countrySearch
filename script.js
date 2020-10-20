@@ -2,7 +2,7 @@ const userInput = "";
 
 searchCountry = () => {
   let userInput = $("#userInput").val().trim();
-  // console.log(userInput);
+  console.log(userInput);
 
   const queryURL = "https://restcountries.eu/rest/v2/name/" + userInput;
   console.log(queryURL);
@@ -69,12 +69,10 @@ $("#search").on("click", function (event) {
 $("#random").on("click", function (event) {
   event.preventDefault();
 
-  let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  for (var i = 0; i < 1; i++) {
-    alphabet = alphabet.charAt(Math.floor(Math.random() * alphabet.length));
-  }
+  const randomName =
+    countryList[Math.floor(Math.random() * countryList.length)];
 
-  $("#userInput").val(alphabet);
+  $("#userInput").val(randomName);
 
   searchCountry();
 
