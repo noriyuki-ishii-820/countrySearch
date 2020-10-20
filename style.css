@@ -12,6 +12,11 @@
   font-size: 40px;
 }
 
+h1 {
+  font-size: 20px;
+  text-decoration: underline;
+}
+
 #map {
   height: 500px;
   border-radius: 3px;

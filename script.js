@@ -23,7 +23,9 @@ searchCountry = () => {
       $("#capital").text("Capital : " + response[0].capital);
       $("#language").text("Language : " + response[0].languages[0].name);
       $("#population").text(
-        "Population : " + response[0].population.toLocaleString("en")
+        "Population : " +
+          response[0].population.toLocaleString("en") +
+          " people"
       );
 
       $("#area").text(
