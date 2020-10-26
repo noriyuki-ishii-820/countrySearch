@@ -2,6 +2,13 @@ const userInput = "";
 
 searchCountry = () => {
   let userInput = $("#userInput").val().trim();
+
+  if (userInput === "South Korea") {
+    userInput = "Korea (Republic of)";
+  } else if (userInput === "North Korea") {
+    userInput = "Korea (Democratic People's Republic of)";
+  }
+
   console.log(userInput);
 
   const queryURL = "https://restcountries.eu/rest/v2/name/" + userInput;
@@ -50,6 +57,17 @@ searchCountry = () => {
       $("#borders").text(
         "Bordering With : " + response[0].borders.length + " countries."
       );
+
+      const regionalBloc = response[0].regionalBlocs[0].name;
+      console.log(regionalBloc);
+
+      if (regionalBloc === "") {
+        $("#bloc").empty();
+        $("#bloc").text("Regional Bloc : no information available.");
+      } else {
+        $("#bloc").empty();
+        $("#bloc").text("Regional Bloc : " + regionalBloc);
+      }
 
       const countryLat = response[0].latlng[0];
       const countryLng = response[0].latlng[1];

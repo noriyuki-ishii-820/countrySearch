@@ -1,5 +1,19 @@
+.topText {
+  text-align: center;
+}
+
+.inputArea {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
 .input {
   width: 70%;
+}
+
+button {
+  margin: 5px;
 }
 
 .border {
@@ -19,6 +33,7 @@ h1 {
 
 #map {
   height: 500px;
+  width: auto;
   border-radius: 3px;
   border: 1px black solid;
 }
@@ -27,6 +42,7 @@ h1 {
   border: 1px black solid;
   width: 85%;
   height: auto;
+  margin: auto;
   margin-top: 20px;
   border-radius: 3px;
 }
